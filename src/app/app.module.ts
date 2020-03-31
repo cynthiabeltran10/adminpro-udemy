@@ -3,15 +3,20 @@ import { NgModule } from '@angular/core';
 
 // Rutas
 import { AppRoutingModule } from './app.routing.module';
-import { PagesRoutingModule } from './pages/pages.routing.module';
+
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
+
+// Temporal
+import { FormsModule } from '@angular/forms';
 
 // Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
+
 
 
 
@@ -24,9 +29,9 @@ import { RegisterComponent } from './login/register.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     PagesModule,
-    PagesRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
